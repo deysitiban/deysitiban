@@ -1,0 +1,236 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f8f8f8;
+    margin: 0;
+    padding: 0;
+}
+
+.Caja {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin-top: 120px;
+    margin-left: 120px;
+}
+
+.formulario {
+    background-color: #ffffff7a;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    max-width: 400px;
+    width: 301px;
+    margin-right:14px ;
+    margin-top: -111px;
+    margin-left: 22px;
+   
+}
+
+.registro {
+    text-align: center;
+    margin-top: -100px;
+}
+
+label {
+    font-weight: bold;
+}
+
+.mio {
+    width: 241px;
+    padding: 8px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 32px;
+}
+
+
+.boton {
+    background-color: #1783db;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 14px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+caption {
+    font-size: 60px;
+    font-family: fantasy;
+    text-decoration: black;
+    font-weight: bold;
+    text-align: center;
+    color: rgb(2, 2, 2);
+    padding: 10px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+    margin-bottom: 20px;
+  }
+  .table-container {
+    overflow-y: scroll;
+   
+    height: 300px; /* Ajusta la altura según tus necesidades */
+    margin-top: 22px;
+    margin: 15px;
+    padding-bottom: 20px;
+    
+}
+
+.table th,
+.table td {
+    padding: 12px 15px;
+    text-align: left;
+    border: 1px solid #ddd; /* Agregar bordes a las celdas */
+}
+
+.table th {
+    background-color: #f2f2f2;
+    font-weight: bold;
+}
+
+
+.inicio th {
+    cursor: pointer;
+}
+
+.inicio th i {
+    margin-left: 5px;
+}
+
+.inicio th i.fa-chevron-down::before {
+    content: '\f078';
+}
+
+.sticky-header th {
+    position: sticky;
+    top: 0;
+    background-color: #f2f2f2;
+}
+
+.caducado {
+    color: #ff0000;
+    font-weight: bold;
+}
+
+.proximo {
+    color: #ff8c00;
+    font-weight: bold;
+}
+
+.vigente {
+    color: #008000;
+    font-weight: bold;
+}
+
+.busqueda {
+    margin-top: -197px;
+    text-align: center;
+}
+/* Estilos generales */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f8f8f8;
+    margin: 0;
+    padding: 0;
+}
+
+
+
+@media only screen and (max-width: 768px){
+    .Caja {
+        display: flex;
+       
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        margin-top: 120px;
+    }
+    
+    .formulario {
+        background-color: #ffffff7a;
+        border-radius: 10px;
+        padding: 20px;
+        box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+        max-width: 400px;
+        width: 301px;
+        margin-right:14px ;
+        margin-top: -345px;
+        margin-left: 114px;
+        font-size: 9px;
+       
+    }
+
+    .busqueda {
+        margin-top: -293px !important ;
+        text-align: center !important;
+    } 
+    .table-container {
+        overflow-y: scroll;
+        height: 300px; 
+        margin-top: 22px;
+        margin: 15px;
+        padding-bottom: 20px;
+        margin-left: -2px;
+        font-size: 12px;
+    
+        
+    }
+    
+    
+    .table th,
+    .table td {
+        padding: 12px 15px;
+        text-align: left;
+        border: 1px solid #ddd;
+    }
+    
+    .table th {
+        background-color: #f2f2f2;
+        font-weight: bold;
+    }
+    .mio {
+        width: 126px !important;
+        padding: 0px;
+        margin-bottom: 10px !important;
+        border: 1px solid #ccc;
+        border-radius: 32px;
+    }
+    .boton {
+        background-color: #1783db !important;
+        color: white !important;
+        border: none !important;
+        padding: 4px 6px !important;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 9px;
+        border-radius: 4px;
+        cursor: pointer !important;
+    }
+    .row{
+        width: 358%;
+        height: 769px;
+        border-radius: 10px;
+        background: #6a74ca4b;
+        box-shadow: 5px 5px 10px 1px rgba(0,0,0,0.2);
+          margin-left:10px;
+      }
+      .menu__side{
+        width: 225px;
+        height: 33%;
+        background: #1783db;
+        position: fixed;
+        top: 0;
+        left: 0;
+        color: white;
+        font-size: 18px;
+        z-index: 300;
+        overflow: hidden;
+        overflow-y: scroll;
+        border-right: 20px solid #1783db;
+        transition: all 300ms cubic-bezier(0.785, 0.135, 0.15, 0.86);
+      }
+  
+}

@@ -1,0 +1,39 @@
+.table {
+   
+    border-collapse: collapse;
+    margin: 100px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .table th,
+  .table td {
+    padding: 8px;
+    text-align: left;
+   
+  }
+  .table thead th{ 
+    
+    background-color: #7386da;
+    width: 120px;
+	text-align: center;
+
+}
+
+h1 {
+    font-weight: bold;
+    font-size: 44px;
+    margin-bottom: 10px;
+    text-align: center;
+  }
+.caducado {
+    background-color: red;
+    color: white;
+}
+.vigente {
+    background-color: green;
+    color: white;
+}
+.proxima-caducidad {
+    background-color: yellow;
+}

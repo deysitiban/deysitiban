@@ -1,0 +1,270 @@
+
+*{
+margin: 0%;
+padding: 0%;
+
+}
+.wrapper {
+    position: relative;
+    margin-top: 120px;
+  }
+  
+  .fondo {
+    margin-top: -46px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 641px;
+    object-fit: cover;
+    z-index: -1;
+    
+  }
+  .perrito{
+    width: 111%;
+    height: 265px;
+
+  }
+
+  .gatito{
+    width: 420px;
+    height: 269px
+   
+  }
+div.botones{
+  justify-content: center;
+  align-items: center;
+  height: 57vh; 
+  display: flex;
+  margin-left: -244px;
+
+}
+
+.cat {
+  justify-content: flex-end;
+  margin: 0 10px;
+  padding: 11px 47px;
+  border: none;
+  border-radius: 4px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  margin-bottom: 10px;
+  background-color: #FF4081; 
+  color: white; 
+  border: 2px solid #2f352f;
+  -webkit-transition-duration: 0.4s;
+  transition-duration: 0.4s;
+}
+
+
+.dog {
+  justify-content: flex-end;
+  margin: 0 10px;
+  padding: 11px 47px;
+  border: none;
+  border-radius: 4px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  margin-bottom: 10px;
+  background-color: #3F51B5;
+  color: white; 
+  border: 2px solid #2f352f;
+  -webkit-transition-duration: 0.4s;
+  transition-duration: 0.4s;
+}
+
+
+.dog:hover, .cat:hover {
+  background-color: #AB47BC; 
+}
+
+
+.salir{
+  justify-content: flex-end;
+  margin: 0 10px;
+  padding: 11px 47px;
+  border: none;
+  border-radius: 4px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  margin-bottom: 10px;
+  background-color: #FF5722; 
+  color: white;
+  border: 2px solid #2f352f;
+  -webkit-transition-duration: 0.4s;
+  transition-duration: 0.4s;
+  margin-top: 360px;
+  margin-left: -473px;
+}
+
+
+.salir:hover {
+  background-color: #FF9800; 
+}
+
+
+
+
+
+button a {
+  text-decoration: none; 
+  color: inherit; 
+}
+
+h1 {
+  text-align: center; 
+  font-size: 4.3rem;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-weight: bold; 
+  color: #020202;
+  -webkit-text-stroke: 2px white;
+   animation: fadeInZoom 1s ease-in-out forwards; 
+  opacity: 0; 
+  
+}
+
+
+@keyframes fadeInZoom {
+  0% { transform: scale(0.5); opacity: 0; } 
+  100% { transform: scale(1); opacity: 1; } 
+}
+
+.contenedor {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+
+@keyframes wave {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+}
+
+.titulo{
+  text-align: center;
+  margin-top: -74px;
+  font-size: 223%;
+  text-decoration: double;
+  
+}
+
+@media only screen and (max-width: 768px) {
+  .fondo {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 208%;
+    height: 132%; 
+    object-fit: cover;
+    z-index: -1;
+    }
+
+ h1{
+  font-size: 40px;
+ }
+
+  
+  .titulo {
+      font-size: 100%; 
+  }
+  
+  .salir {
+      margin-top: 10px;
+      margin-left: 0; 
+  }
+  
+  .cat {
+    justify-content: flex-end;
+    margin: 0 10px;
+    padding: 4px 24px;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-bottom: 10px;
+    background-color: #FF4081; 
+    color: white; 
+    border: 2px solid #2f352f;
+    -webkit-transition-duration: 0.4s;
+    transition-duration: 0.4s;
+  }
+  
+  
+  .dog {
+    justify-content: flex-end;
+    margin: 0 10px;
+    padding: 4px 24px;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-bottom: 10px;
+    background-color: #3F51B5;
+    color: white; 
+    border: 2px solid #2f352f;
+    -webkit-transition-duration: 0.4s;
+    transition-duration: 0.4s;
+  }
+  
+  
+  .dog:hover, .cat:hover {
+    background-color: #AB47BC; 
+  }
+  
+  
+  .salir{
+    justify-content: flex-end;
+    margin: 0 10px;
+    padding: 4px 24px;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-bottom: 10px;
+    background-color: #FF5722; 
+    color: white;
+    border: 2px solid #2f352f;
+    -webkit-transition-duration: 0.4s;
+    transition-duration: 0.4s;
+    margin-top: 242px;
+    margin-left: -270px;
+  }
+  
+  
+  .salir:hover {
+    background-color: #FF9800; 
+  }
+  
+  .perrito{
+    width: 87%;
+    height: 124px;
+
+  }
+
+  .gatito{
+    width: 212px;
+    height: 122px
+   
+  }
+  div.botones{
+    justify-content: center;
+    align-items: center;
+    height: 57vh; 
+    display: flex;
+    margin-left: -93px;
+  
+  }
+  
+}

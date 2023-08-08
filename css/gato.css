@@ -1,0 +1,305 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700;1,800&display=swap');
+
+* {
+	padding: 0;
+	margin: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  font-family: 'Open Sans', sans-serif;
+
+
+}
+
+body{
+  margin-left: 80px;
+  margin-top: 80px;
+  transition: margin-left 300ms cubic-bezier(0.785, 0.135, 0.15, 0.86);
+}
+
+main{
+  padding: 20px;
+}
+
+header{
+  width: 105%;
+  height: 80px;
+  background: #f5f5f5;
+  display: flex;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  z-index: 200;
+  
+}
+
+.des{
+  font-size: 60px;
+  font-family: fantasy;
+  text-decoration: black;
+  font-weight: bold;
+  text-align: center;
+  color: rgb(2, 2, 2);
+  padding: 10px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+  margin-bottom: 20px;
+}
+
+
+.icon__menu{
+  width: 50px;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transform: translateX(10px);
+}
+
+.icon__menu i{
+  font-size: 20px;
+  cursor: pointer;
+  position: absolute;
+}
+
+.menu__side{
+  width: 225px;
+  height: 100%;
+  background: #1783db;
+  position: fixed;
+  top: 0;
+  left: 0;
+  color: white;
+  font-size: 18px;
+  z-index: 300;
+  overflow: hidden;
+  overflow-y: scroll;
+  border-right: 20px solid #1783db;
+  transition: all 300ms cubic-bezier(0.785, 0.135, 0.15, 0.86);
+}
+
+/*Ocultar scroll para chrome, safari y opera*/
+.menu__side::-webkit-scrollbar{
+  display: none;
+}
+
+/*Ocultar scroll para IE, Edge y Firefox*/
+.menu__side{
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+
+.name__page{
+  padding: 20px 30px;
+  display: flex;
+  align-items: center;
+  margin-top: 10px;
+}
+
+.name__page i{
+  width: 20px;
+  margin-right: 20px;
+}
+
+.options__menu{
+  padding: 20px 30px;
+  position: absolute;
+  top: 80px;
+}
+
+.options__menu a{
+  color: #ffffffb2;
+  cursor: default;
+  display: block;
+  position: relative;
+  transition: color 300ms;
+}
+
+.options__menu a:hover{
+  color: white;
+}
+
+.options__menu .option{
+  padding: 20px 0px;
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+
+.options__menu .option i{
+  width: 20px;
+  margin-right: 20px;
+  cursor: pointer;
+}
+
+.options__menu .option h4{
+  font-weight: 300;
+  cursor: pointer;
+}
+
+a.selected{
+  color: #fff;
+}
+
+.selected:before{
+  content: '';
+  width: 3px;
+  height: 80%;
+  background: white;
+  position: absolute;
+  top: 10%;
+  left: -30px;
+}
+
+/*Clases para usar en JavaScript*/
+
+.body_move{
+  margin-left: 250px;
+}
+
+.menu__side_move{
+  width: 250px;
+}
+
+
+@media screen and (max-width: 760px){
+  .body_move{
+      margin-left: 0px;
+  }
+
+  .menu__side_move{
+      width: 80px;
+      left: -80px;
+  }
+}
+form {
+
+	margin-left: 6%;
+	margin-right: 30%;
+	margin-top: 10px;
+	padding-top: 80px;
+	margin-bottom: 30px
+}
+.wrapper {
+  position: relative;
+  margin-left:110px;
+}
+
+.fondo {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 105%;
+  height: 772px;
+  object-fit: cover;
+  z-index: -1;
+	margin-left:224px;
+ 
+}
+.tema{
+  font-family: 'Arial', sans-serif;
+  font-size: 50px;
+  color: #000000; /* Verde */
+  text-align: center;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+  margin: 20px 0;
+  padding: 10px;
+  border-radius: 8px;
+  background-color: #f2f2f2; /* Color de fondo */
+  margin-left: 390px;
+  
+}
+
+.row{
+  width: 122%;
+  height: 769px;
+  border-radius: 10px;
+  background: #6a74ca4b;
+  box-shadow: 5px 5px 10px 1px rgba(0,0,0,0.2);
+	margin-left:10px;
+}
+
+.contenido {
+  position: relative;
+  z-index: 1;
+}
+
+
+.todo{
+	display: flex;
+ 
+}
+
+.Caja form {
+    margin-bottom: 20px;
+  }
+  
+  .Caja form input[type="submit"] {
+    margin-top: 10px;
+  }
+
+
+  .boton {
+    background-color: #7898db;
+    color: white;
+    padding: 8px 16px;
+    border: none;
+    cursor: pointer;
+	
+  }
+  .container {
+    margin-top: 20px;
+    max-height: 300px;
+  }
+  .table {
+    width: 100%;
+    border-collapse: collapse;
+ 
+  }
+
+  .table th,
+  .table td {
+    padding: 8px;
+    text-align: left;
+   
+  }
+  .table thead th{ 
+    
+    background-color: #7386da;
+    width: 120px;
+	text-align: center;
+
+}
+
+.menu{
+  background-color: #958b969f;
+  width: 30%;
+  height: 645px;
+
+  
+}
+h1{
+  font-size: 50PX;
+  padding-top: 26PX;
+}
+
+li a{
+  text-decoration: none; 
+  color: inherit; 
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  
+}
+ul{
+  padding-top: 72px;
+}
+
+ul li a{
+  font-size: 2em;
+}
+
+
+caption {
+    font-weight: bold;
+    font-size: 44px;
+    margin-bottom: 10px;
+  }
+ 

@@ -1,0 +1,126 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f8f8f8;
+    margin: 0;
+    padding: 0;
+}
+
+.Caja {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+.row{
+    width: 110%;
+    height: 644px;
+    border-radius: 10px;
+    background: #70717d9f;
+    box-shadow: 5px 5px 10px 1px rgba(0,0,0,0.2);
+      margin-left:-113px;
+      margin-top: -46px;
+  }
+  .wrapper {
+    position: relative;
+    margin-top: -121px;
+  }
+  .fondo {
+    margin-top: -1px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 110%;
+    height: 645px;
+    object-fit: cover;
+    z-index: -1;
+    margin-left:-113px;
+    
+  }
+
+  .regresar{
+    background-color: #7898db;
+    color: white;
+    padding: 8px 16px;
+    border: none;
+    cursor: pointer;
+  }
+
+  .dif{
+    text-align: center;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    margin-top: 120px;
+    font-size: 64px;
+  }
+
+  .table-container {
+      
+    height: 300px; /* Ajusta la altura según tus necesidades */
+    margin-top: 35px;
+  
+    padding-bottom: 20px;
+    margin-left: 159px;
+    
+}
+
+
+.table th,
+.table td {
+    padding: 12px 15px;
+    text-align: left;
+    border: 1px solid #ddd; /* Agregar bordes a las celdas */
+}
+
+.table th {
+    background-color: #7386da;
+    font-weight: bold;
+}
+
+
+.inicio th {
+    cursor: pointer;
+}
+
+.inicio th i {
+    margin-left: 5px;
+}
+
+.inicio th i.fa-chevron-down::before {
+    content: '\f078';
+}
+
+.sticky-header th {
+    position: sticky;
+    top: 0;
+    background-color: #7386da;
+}
+
+.caducado {
+    color: #ff0000;
+    font-weight: bold;
+}
+
+.proximo {
+    color: #ff8c00;
+    font-weight: bold;
+}
+
+.vigente {
+    color: #008000;
+    font-weight: bold;
+}
+
+.busqueda {
+    margin-top: -252px;
+    text-align: center;
+}
+/* Estilos generales */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f8f8f8;
+    margin: 0;
+    padding: 0;
+}
+
+
+
+

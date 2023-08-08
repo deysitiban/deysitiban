@@ -1,0 +1,233 @@
+
+
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;800&display=swap');
+
+*{
+    font-family: 'Poppins', sans-serif;
+
+}
+
+.wrapper {
+    position: relative;
+  }
+  
+  .fondo {
+    position: absolute ;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1;
+  }
+
+  .main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+.row{
+    width: 900px;
+    height: 550px;
+    border-radius: 10px;
+    background:#70717d9f;
+    box-shadow: 5px 5px 10px 1px rgba(0,0,0,0.2);
+}
+.side-image{
+    background-image: url("images/2.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+    border-radius: 10px 0 0 10px;
+}
+img {
+  width: 350px; 
+  position: absolute;
+  top: 60px;
+  left: 60px;
+ 
+}
+
+.text{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.text p{
+    color: #fff;
+    font-size: 18px;
+}
+i{
+    font-weight: 400;
+    font-size: 15px;
+}
+.right{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+.input-box{
+    width: 330px;
+    box-sizing: border-box;
+}
+.input-box header{
+     
+    margin-bottom: 45px;
+    text-align: center; 
+    font-size: 2rem; 
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-weight: bold; 
+    color: #020202; 
+   
+}
+.input-field{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    padding: 0 10px 0 10px;
+}
+.input{
+    height: 45px;
+    width: 100%;
+    background: transparent;
+    border: none;
+    border-bottom: 1px solid rgba(0,0,0,0.2);
+    outline: none;
+    margin-bottom: 20px;
+    color: #40414a;
+}
+.input-box .input-field label{
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    pointer-events: none;
+    transition: .5s;
+}
+.input-field .input:focus ~ label{
+    top: -10px;
+    font-size: 13px;
+}
+.input-field .input:valid ~ label{
+    top: -10px;
+    font-size: 13px;
+    color: #5d5076;
+}
+
+.submit{
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 20px;
+    text-align: center;
+    text-decoration: none;
+    background-color: #cd96d8;
+    color: rgb(7, 7, 7);
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+.submit:hover {
+    background-color: #cd96d8;
+  }
+  
+  .submit:active {
+    background-color: #cd96d8;
+  }
+.signin{
+    text-align: center;
+    font-size: small;
+    margin-top: 25px;
+}
+span a{
+    text-decoration: none;
+    font-weight: 700;
+    color: #000;
+    transition: .5s;
+}
+span a:hover{
+    text-decoration: underline;
+    color: #000;
+}
+.caducado {
+    background-color: red;
+    color: white;
+}
+.vigente {
+    background-color: green;
+    color: white;
+}
+.proxima-caducidad {
+    background-color: yellow;
+}
+
+
+@media only screen and (max-width: 768px) {
+    .wrapper {
+        position: relative;
+    }
+
+    .fondo {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 208%;
+    height: 100%; 
+    object-fit: cover;
+    z-index: -1;
+    }
+
+    .main {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        min-height: 100vh;
+    }
+
+    .row {
+        width: 100%;
+        height: auto;
+        border-radius: 10px;
+        margin: 20px 10px;
+        background: #70717d9f;
+        box-shadow: 5px 5px 10px 1px rgba(0, 0, 0, 0.2);
+    }
+
+    .side-image {
+        border-radius: 10px 10px 0 0;
+        height: 200px;
+    }
+
+    img {
+        width: 176px;
+        top: 30px;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
+    .text {
+        top: 40%;
+    }
+
+    .input-box {
+        max-width: 100%;
+        padding: 20px 15px;
+    }
+
+    .input-box header {
+        margin-bottom: 20px;
+        font-size: 1.2rem;
+    }
+
+    .submit {
+        font-size: 18px;
+        margin-top: 15px;
+    }
+
+    .signin {
+        margin-top: 15px;
+    }
+}
